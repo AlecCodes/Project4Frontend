@@ -1,4 +1,5 @@
-function Show(props){
+function Show(params){
+    console.log(params.id)
     return (
     <h1>Show COMPONENT</h1>
     )
