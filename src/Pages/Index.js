@@ -25,6 +25,7 @@ function Index(props){
             </ul>
             )
         })}
+        <Link to = 'create'>Create</Link>
     </>
     )
 }
