@@ -21,7 +21,7 @@ function Index(props){
         {unique.map((element, index) => {
             return(
             <ul key = {index}>
-                <Link to = {`catshow/${element}`}>{element}</Link>
+                <Link to = {`catshow/${element}`} id = {element}>{element}</Link>
             </ul>
             )
         })}

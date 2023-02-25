@@ -4,13 +4,13 @@ import Index from "./Pages/Index"
 import Show from "./Pages/Show"
 import Create from "./Pages/Create"
 import CatShow from "./Pages/CatShow"
-import { showLoader, indexLoader } from "./loaders";
+import { showLoader, indexLoader, catLoader } from "./loaders";
 
 const router = createBrowserRouter(createRoutesFromElements(
     <>
         <Route path='/' element = {<App/>}>
             <Route path = "" element = {<Index/>} loader = {indexLoader}/>
-            <Route path = "catshow/:cat" element = {<CatShow/>} loader={indexLoader}/>
+            <Route path = "catshow/:cat" element = {<CatShow/>} loader={catLoader}/>
             <Route path = "create" element = {<Create/>}/>            
             <Route path = "show/:id" element = {<Show/>} loader ={showLoader} />
         </Route>
