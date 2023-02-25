@@ -18,3 +18,11 @@ export const createAction = async({request}) => {
     })
     return redirect('/')
 }
+
+export const deleteAction = async({params}) => {
+    //console.log('DELETE '+ params.id + '/')
+    await fetch(URL + params.id + '/' , {
+        method: "delete"
+    })
+    return redirect('/')
+}

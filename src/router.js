@@ -4,7 +4,7 @@ import Index from "./Pages/Index"
 import Show from "./Pages/Show"
 import Create from "./Pages/Create"
 import CatShow from "./Pages/CatShow"
-import { createAction } from "./actions";
+import { createAction, deleteAction } from "./actions";
 import { showLoader, indexLoader, catLoader } from "./loaders";
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -14,6 +14,7 @@ const router = createBrowserRouter(createRoutesFromElements(
             <Route path = "catshow/:cat" element = {<CatShow/>} loader={catLoader}/>
             <Route path = "create" element = {<Create/>}/>
             <Route path = "createAction" action = {createAction}/>            
+            <Route path = "delete/:id" action = {deleteAction}/>
             <Route path = "show/:id" element = {<Show/>} loader ={showLoader} />
         </Route>
     </>
