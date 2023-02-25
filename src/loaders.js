@@ -10,7 +10,6 @@ export const catLoader = async({params}) => {
     const response = await fetch(URL)
     const data = await response.json()
     const catData = data.filter((element) => (element.category === params.cat))
-    console.log(catData)
     return catData
 }
 
