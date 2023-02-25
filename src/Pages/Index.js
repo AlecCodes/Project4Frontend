@@ -3,16 +3,14 @@ import { useLoaderData, Link } from "react-router-dom"
 
 function Index(props){
     const data = useLoaderData()
-    console.log(data)
     
     //Make alist of unique categories
     let allCategories = []
     data.forEach((element) => allCategories.push(element.category))
-    console.log(allCategories)
 
     function uniqueCategories(element, index, arr){
          return arr.indexOf(element) === index
-     }
+    }
     const unique = allCategories.filter(uniqueCategories)
     
     return (

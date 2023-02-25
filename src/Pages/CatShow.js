@@ -2,7 +2,6 @@ import { useLoaderData, Link} from "react-router-dom"
 
 function CatShow({params}){
     const data = useLoaderData()
-    console.log(data)
 
     return (
     <div>

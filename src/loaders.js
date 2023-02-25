@@ -16,7 +16,5 @@ export const catLoader = async({params}) => {
 export const showLoader = async({params}) => {
     const response = await fetch(URL+params.id+'/')
     const data = await response.json()
-    console.log(data)
-    console.log(params.id)
     return data
 }
