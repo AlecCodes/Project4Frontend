@@ -16,15 +16,15 @@ function CatShow({params}){
     
 
     return (
-    <div>
-    <h1>{data[0].category}</h1>
-    <h3>Average time: {nonZeroAvg} minutes</h3>
-    <h3>Record time: {record} minutes</h3>
-    <ul>
-        {data.map((element) => {
-            return <li key = {element.id}><Link to={`../show/${element.id}`}>{element.name}</Link></li>
-        })}
-    </ul>
+    <div className="container">
+        <h1>{data[0].category}</h1>
+        <h3>Average time: {nonZeroAvg} minutes</h3>
+        <h3>Record time: {record} minutes</h3>
+        <ul>
+            {data.map((element) => {
+                return <li key = {element.id}><Link to={`../show/${element.id}`}>{element.name}</Link></li>
+            })}
+        </ul>
     </div>
     )
 }

@@ -4,7 +4,7 @@ function Edit(props){
     const data = useLoaderData()
     //console.log(data)
     return(
-    <div>
+    <div className="container">
         <Form action = {`/edit/${data.id}`} method='post'>
             <input type = 'text' name = 'name' defaultValue={`${data.name}`} />
             <input type = 'text' name = 'category' defaultValue={`${data.category}`}/>

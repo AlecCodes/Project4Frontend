@@ -14,8 +14,8 @@ function Index(props){
     const unique = allCategories.filter(uniqueCategories)
     
     return (
-    <>
-        <h1>Index COMPONENT</h1>
+    <div className="container">
+        <h1>My Runs:</h1>
         {unique.map((element, index) => {
             return(
             <ul key = {index}>
@@ -24,7 +24,7 @@ function Index(props){
             )
         })}
         <Link to = 'create'>Create</Link>
-    </>
+    </div>
     )
 }
 

@@ -3,7 +3,7 @@ import {useLoaderData, Form, Link} from 'react-router-dom'
 function Show({params}){
     const data = useLoaderData()
     return (
-    <div>
+    <div className='container'>
         <Form action = {`../delete/${data.id}`} method='post'>
             <input type = 'submit' value='delete'/>    
         </Form>

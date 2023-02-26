@@ -1,6 +1,6 @@
 function Header(props){
     return (
-    <h1>Header COMPONENT</h1>
+    <nav><h1>Run Tracker</h1></nav>
     )
 }
 
