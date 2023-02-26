@@ -16,14 +16,13 @@ function Index(props){
     return (
     <div className="container">
         <h1>My Runs:</h1>
+        <ul>
         {unique.map((element, index) => {
             return(
-            <ul key = {index}>
-                <Link to = {`catshow/${element}`} id = {element}>{element}</Link>
-            </ul>
+                <li><Link to = {`catshow/${element}`} id = {element}>{element}</Link></li>
             )
         })}
-        <Link to = 'create'>Create</Link>
+        </ul>
     </div>
     )
 }

@@ -1,16 +1,38 @@
 .App {
-  background-color: red;
   height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("https://osi.ie/wp-content/uploads/2021/10/iStock-508284940_generic-trail.jpg");
+  background-size: cover;
 }
 
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+nav, .container {
+  border-radius: 10px;
+}
+
+nav h1, .linkButton{
+  color: aliceblue;
+}
+
+.container .linkButton{
+  color: darkgreen;
+}
+
+
 nav{
-  background-color: blue;
+  background-image: url("https://oldmiltondental.com/wp-content/uploads/2016/12/004-wood-melamine-subttle-pattern-background-pat.jpg");
   width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .container{
@@ -31,6 +53,7 @@ nav{
 }
 
 .App-header {
+  background-size: cover;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
